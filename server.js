@@ -46,6 +46,13 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/portfolio', (req, res) => {
+    res.render('portfolio.hbs', {
+        pageTitle: 'Portfolio Page',
+        message: 'Portfolio page here.'
+    });
+});
+
 app.get('/bad', (req, res) => {
     //res.send('<h1>Hello Express!</h1>');
     res.send({
